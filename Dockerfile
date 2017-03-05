@@ -6,7 +6,7 @@ WORKDIR /usr/src/app/
 RUN bundle install
 
 RUN apt update && \
-    apt install espeak \
+    apt install -y espeak \
                 lame && \
     rm -rf /var/lib/apt/lists/*
 
